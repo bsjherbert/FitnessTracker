@@ -5,9 +5,9 @@
 
 ## Visuals
 
-!["Added Pizza Burger"](./views/addedPizzaBurger.png)  
-!["Adding Pizza Burger"](./views/addingPizzaBurger.png)
-!["Devoured Pizza Burger"](./views/devouredPizzaBurger.png)
+!["Added Pizza Burger"](./views/Firstpage.png)  
+!["Adding Pizza Burger"](./views/Post.png)
+!["Devoured Pizza Burger"](./views/Update.png)
 
 	
 ### Photo Descriptions
@@ -15,11 +15,11 @@
 
     After the user inserts the type and name they click submit to save the exercise in the text box below.
 
-    After it is saved they have the option to update the exercise by clicking on it or delete the exercise by clicking on the "x".
+    After it is saved they have the option to update the exercise by clicking on it and updating it.
     
 ## Usage
     Users looking for an app that will track their progress for different exercises.
    
 ## Links 
 
-[Burger](https://hidden-waters-67012.herokuapp.com/)
+[Fitness Tracker](https://fathomless-dawn-05559.herokuapp.com/)
