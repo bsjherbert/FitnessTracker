@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>NoteTaker</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style media="screen">
-        body {
-            text-align: center;
-            background-color: rgb(0, 14, 214);
-        }
-        
-        .primary {
-            color: #64edbd;
-        }
-        
-        h1 {
-            font-size: 40px;
-            color: white;
-        }
-        
-        h2,
-        h4 {
-            color: white;
-        }
-        
-        .delete {
-            margin-left: 20px;
-            color: red;
-            cursor: pointer;
-            text-align: right;
-        }
-        
-        input {
-            width: 400px;
-            height: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 42px;
-            background-color: antiquewhite;
-        }
-        
-        textarea {
-            width: 400px;
-            height: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 24px;
-            background-color: antiquewhite;
-        }
-        
-        .data-title {
-            cursor: pointer;
-            font-size: 24px;
-        }
-        
-        #results {
-            width: 400px;
-            height: 200px;
-            overflow: auto;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: antiquewhite;
-        }
-        
-        #action-button {
-            display: inline-block;
-        }
-        
-        #buttons {
-            margin: 20px;
-        }
-    </style>
-</head>
+      body {
+        text-align: center;
+        background-color: rgb(0, 14, 214);
+      }
 
-<body>
+      .primary {
+        color: #64edbd;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: white;
+      }
+
+      h2,
+      h4 {
+        color: white;
+      }
+
+      .delete {
+        margin-left: 20px;
+        color: red;
+        cursor: pointer;
+        text-align: right;
+      }
+
+      input {
+        width: 400px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 42px;
+        background-color: antiquewhite;
+      }
+
+      textarea {
+        width: 400px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        background-color: antiquewhite;
+      }
+
+      .data-title {
+        cursor: pointer;
+        font-size: 24px;
+      }
+
+      #results {
+        width: 400px;
+        height: 200px;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+      }
+
+      #action-button {
+        display: inline-block;
+      }
+
+      #buttons {
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
     <h1>Exercise App</h1>
     <h2>Status: <span id="status" class="primary">Creating</span></h2>
     <h4>Create a new exercise by submitting its title and content below</h4>
     <h4>Click on an exercise to edit its type or name</h4>
     <div id="user-input">
-        <p><strong>Exercise Type</strong></p>
-        <input type="text" id="title" />
-        <br>
-        <p><strong>Exercise Name</strong></p>
-        <textarea id="note"></textarea>
-        <div id="buttons">
-            <div id="action-button">
-                <button id="make-new">Submit</button>
-            </div>
-            <button id="clear-all">Delete All Exercises</button>
+      <p><strong>Exercise Type</strong></p>
+      <input type="text" id="type" />
+      <br />
+      <p><strong>Exercise Name</strong></p>
+      <textarea id="name"></textarea>
+      <div id="buttons">
+        <div id="action-button">
+          <button id="make-new">Submit</button>
         </div>
+        <button id="clear-all">Delete All Exercises</button>
+      </div>
     </div>
 
     <div id="results"></div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
